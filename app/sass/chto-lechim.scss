@@ -1,0 +1,209 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+
+@import "media";
+
+//Custom styles here
+
+// top
+h1 {
+  color: $red;
+  font-size: em(37px);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+h2 {
+  font-weight: normal;
+  font-size: em(31px);
+  margin-bottom: 3%;
+}
+.section--top {
+  padding: 1% 0 2% 0;
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    color: $red;
+    font-size: em(22px);
+  }
+}
+
+/*
+.owl-carousel--nav {
+  padding: 0 40px;
+  position: relative;
+  .owl-nav {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    > div {
+      position: absolute;
+      left: 25px;
+      font-size: 34px;
+      line-height: 38px;
+      &:hover {
+        color: $accent;
+      }
+      &.owl-next {
+        right: 25px;
+        left: auto;
+
+      }
+    }
+  }
+}
+*/
+
+.owl-carousel--dots {
+	.owl-dots {
+    text-align: center;
+    margin-top: 25px;
+  }
+		.owl-dot {
+			width: 14px;
+			height: 14px;
+			background-color: #D7D7D7;
+			border-radius: 10em;
+			display: inline-block;
+			margin: 10px;
+  			&.active {
+          background-color: $accent
+        }
+    }
+}
+
+
+.carousel-item {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  border: 3px solid $darkgrey;
+  border-radius: 5px;
+  background-color: darken($white, 5);
+  display: inline-block;
+  text-align: center;
+  // transition: all .25s ease;
+  &:hover {
+    border-color: $red;
+    background-color: $white;
+  }
+}
+.carousel-item__text {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    text-transform: uppercase;
+    padding: 10px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .carousel-item__link {
+    color: $medgrey;
+    font-weight: normal;
+    font-size: em(15px);
+    display: inline-block;
+    text-align: center;
+  }
+}
+.carousel-item__pic {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  &:hover {
+    border: 3px solid $red;
+  }
+}
+
+/* section--button записаться на прием [верх]
+begin */
+@import "button";
+
+.section--button {
+  margin-bottom: -55px;
+}
+// @import "button";
+/* section--button записаться на прием [верх]
+end */
+
+
+/* section--nervous Заболевания нервной системы
+begin */
+.section--nervous {
+  padding-bottom: 6%;
+}
+/* section--nervous Заболевания нервной системы
+end */
+
+/* section--vertebral Болезни позвоночника
+begin */
+.section--vertebral {
+  padding-top: 60px;
+  padding-bottom: 5%;
+  color: $white;
+}
+/* section--vertebral Болезни позвоночника
+end */
+
+/* section--joint Болезни суставов
+begin */
+.section--joint {
+  padding-bottom: 6%;
+}
+.section--grey {
+  .owl-carousel--dots {
+  		.owl-dots .owl-dot {
+  			background-color: $white;
+    			&.active {
+            background-color: $accent;
+          }
+      }
+  }
+}
+/* section--joint Болезни суставов
+end */
+
+/* section--muscules Мышечно-скелетные боли
+begin */
+.section--muscules {
+  padding-top: 60px;
+  padding-bottom: 1%;
+  h2 a {
+    font-size: em(16px);
+    border-bottom: 1px dashed $black;
+  }
+  .owl-carousel {
+    margin-bottom: 33px;
+  }
+  .carousel-item {
+    background-color: darken($medgrey, 5);
+    border: 3px solid $whitegrey;
+    color: $whitegrey;
+    &:hover {
+      border-color: $accent;
+      background-color: $medgrey;
+    }
+  }
+  .carousel-item__link {
+    color: $whitegrey;
+    &:hover {
+      color: $accent;
+    }
+  }
+  .carousel-item__pic {
+    &:hover {
+      border: 3px solid $accent;
+      background-color: lighten($medgrey, 10);
+    }
+  }
+}
+/* section--muscules Мышечно-скелетные боли
+end */
+
+@import "footer";
+@import "form";
+@import "top";

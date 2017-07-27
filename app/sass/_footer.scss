@@ -1,0 +1,138 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+
+//Custom styles here
+
+@import "media";
+
+/* FOOTER
+start */
+.footer {
+  background-color: $darkgrey;
+  color: $lightgrey;
+  text-transform: none;
+  font-family: "roboto", sans-serif;
+  .menu__line {
+    // padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .menu-main {
+    padding: 0;
+    margin-top: -9px;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  a {
+    color: $lightgrey;
+    &:hover,&:visited {
+      color: $lightgrey;
+      text-decoration: underline;
+    }
+  }
+}
+
+footer .menu-toggle {
+  position: relative;
+  top: 20px;
+  right: 16px;
+  float: right;
+}
+.footer .menu-main--hidden {
+  margin-top: 9px;
+  ul {
+    li {
+      &.active {
+        a {
+          color: $white;
+          // text-decoration: underline;
+        }
+      }
+      a {
+        color: $accent;
+      }
+      &:hover,&:visited {
+        a {
+          // color: $accent;
+          // color: $lightgrey;
+          color: $white;
+          background-color: $black;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.logo__text--medgrey p {
+  color: $lightgrey;
+}
+
+.submenu__link {
+  display: block;
+  color: $lightgrey;
+  font-size: em(10px);
+  // &:hover {
+  //   color: $lightgrey;
+  //   text-decoration: underline;
+  // }
+}
+
+.submenu__item {
+  display: block;
+}
+
+.submenu {
+  display: inline-block;
+  vertical-align: top;
+  ul {
+    display: inline-block;
+  }
+  li {
+    padding: 5px 0 ;
+  }
+}
+
+.submenu--chto-lechim {
+  margin-left: 17px;
+}
+
+
+.social-nets {
+  list-style: none;
+  text-align: center;
+  font-size: em(14px);
+}
+.social-nets__items {
+  display: inline-block;
+  padding: 0 10px;
+  i {
+    margin-right: 3px;
+  }
+}
+
+address {
+  font-size: em(12px);
+  line-height: 1.8;
+  font-style: normal;
+  margin-left: 15px;
+  display: inline-block;
+  text-align: left;
+}
+.vcard {
+  display: block;
+  // padding-bottom: 4%;
+}
+
+.adr {
+  // text-align: right;
+  float: right;
+  font-size: em(12px);
+  margin: 0;
+  padding: 3px 15px 25px 0;
+  // line-height: em(12px);
+  // margin-right: 15px;
+  line-height: 1.8;
+}
+/* FOOTER
+end */

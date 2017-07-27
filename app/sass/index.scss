@@ -1,0 +1,220 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+
+//Custom styles here
+
+@import "media";
+
+/*
+SECTION ADVANTAGES
+start */
+.section--advantages__item {
+  padding: 10px 0;
+  h3 {
+    font-size: em(20px);
+    line-height: 1.9em;
+  }
+  span {
+      font-family: "exo2-bold", Arial, sans-serif;
+      font-size: em(24px);
+      color: $accent;
+  }
+  p {
+    font-size: em(14px);
+    line-height: em(17px);
+  }
+}
+
+/*
+SECTION ADVANTAGES
+end */
+
+/*
+SECTION METHODS
+start */
+
+.section--methods {
+  h2 {
+    // padding-bottom: 30px;
+        // padding-top: 3%;
+        padding-bottom: 3%;
+
+  }
+}
+.method {
+  padding: 10px 0;
+    a {
+      display: block;
+      font-size: em(14px);
+      &:hover {
+        color: $white;
+      }
+    }
+}
+.method__img {
+  height: 91px;
+  background-image: url("../img/main-sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.method--nerv {
+  .method__img {
+    width: 87px;
+    background-position: 0 0;
+  }
+  &:hover {
+    .method__img {
+      background-position: 0 -91px;
+    }
+  }
+}
+
+.method--bio {
+  .method__img {
+    width: 44px;
+    background-position: -87px 0;
+  }
+  &:hover {
+    .method__img {
+      background-position: -87px -91px;
+    }
+  }
+}
+
+.method--psyco {
+  .method__img {
+    width: 71px;
+    background-position: -131px 0;
+  }
+  &:hover {
+    .method__img {
+      background-position: -131px -91px;
+    }
+  }
+}
+
+.method--test {
+  padding-bottom: 30px;
+  .method__img {
+    width: 62px;
+    background-position: -204px 0;
+  }
+  &:hover {
+    .method__img {
+      background-position: -204px -91px;
+    }
+  }
+}
+
+/*
+SECTION METHODS
+end */
+
+/* SECTION BUTTON
+start*/
+@import "button";
+/* SECTION BUTTON
+end*/
+
+.section--cure {
+  padding-top: 0;
+}
+/* SECTION ONLINE
+start*/
+.section--online {
+  h2 {
+    padding-bottom: 20px;
+  }
+  color: $whitegrey;
+  text-align: center;
+  li {
+    padding: 0 10px;
+    display: inline-block;
+    line-height: em(50px);
+  }
+  span {
+    color: $accent;
+  }
+  .button--yellow {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
+.online__item .online__link {
+  color: $whitegrey;
+  &:hover {
+    color: $white;
+    span {
+      color: $lightaccent;
+    }
+  }
+}
+/* SECTION ONLINE
+end*/
+
+/* SECTION DOCTOR
+start*/
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section--doctor {
+  h2 {
+    padding-top: 0;
+    // 20px;
+  }
+  h3 {
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: em(25px);
+
+  }
+  img {
+    margin: 1% 0;
+    // max-width: 100%;
+    float: left;
+  }
+  p {
+    font-size: em(16px);
+    line-height: em(16px);
+    padding-bottom: 10px;
+  }
+}
+.doctor__article {
+  margin-bottom: 25px;
+}
+/* SECTION DOCTOR
+end*/
+
+/* SECTION BODY
+start*/
+
+.section--body {
+  padding-top: 0;
+  h2 {
+    padding-top: 0;
+    padding-bottom: 3%;
+  }
+  p {
+    text-align: center;
+    color: $medgrey;
+    font-size: em(20px);
+  }
+}
+
+.body__img--left {
+  float: right;
+}
+.body__img--right {
+  float: left;
+}
+/* SECTION BODY
+end*/
+
+@import "footer";
+@import "form";
+@import "top";

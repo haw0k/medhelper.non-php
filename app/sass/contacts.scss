@@ -1,0 +1,107 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+@import "media";
+
+h1 {
+  color: $red;
+  font-size: em(37px);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+@import "button";
+@import "footer";
+@import "form";
+@import "top";
+
+h3 {
+  padding-top: 20px;
+  font-size: em(21px);
+}
+.icons {
+  height: em(13px);
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  // margin: 0 5px;
+}
+.messenger {
+  margin: 0;
+  height: em(12px);
+}
+
+.contacts-text {
+  text-align: center;
+  padding-bottom: 40px;
+  i {
+    color: $red;
+    // font-size: em(18px);
+  }
+}
+
+.responsive-img {
+  max-width: 100%;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.section--top {
+  padding-bottom: 0;
+  .photo-text {
+    text-align: center;
+    font-size: em(14px);
+    position: relative;
+    top: 8%;
+  }
+}
+.google-maps {
+   position: relative;
+   padding-bottom: 75%; // This is the aspect ratio
+   margin-top: 20px;
+   height: 0;
+   overflow: hidden;
+   iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100% !important;
+     height: 100% !important;
+   }
+}
+.section--button {
+  top: 27px;
+  padding: 0;
+  a:hover {
+    color: $white;
+  }
+}
+.section--photo {
+  // display: flex;
+  h2 {
+    padding-top: 30px;
+    padding-bottom: 4%;
+    font-weight: normal;
+  }
+}
+.fasad-wrap {
+  height: 100%;
+  // display: table;
+  margin-top: 20px;
+}
+.img--top {
+  height: 40%;
+}
+.img--bottom {
+  height: 40%;
+}
+.photo-text {
+  height: 20%;
+  // padding: 2% 0;
+  // line-height: 20%;
+  // display: inline-block;
+  // vertical-align: bottom;
+}

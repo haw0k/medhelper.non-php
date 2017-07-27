@@ -1,0 +1,110 @@
+@import "vars";
+
+/*
+MAGNIFICPOPUP
+start*/
+.mfp-wrap ~ * {
+  filter: blur(5px)
+}
+
+.mfp-content {
+  max-width: 320px;
+  margin: auto;
+}
+/*
+MAGNIFICPOPUP
+end*/
+
+/*
+INPUT FORM
+start*/
+.contact-form {
+  position: relative;
+  padding: 30px 25px;
+  background-color: lighten($darkgrey, 20%);
+  transition: all .3s ease;
+  box-shadow: rgba(0,0,0,.8) 0 0 10px;
+  border-radius: 5px;
+  .button {
+    margin-top: 15px;
+  }
+  &-head {
+    text-align: center;
+    h4 {
+      font-size: em(22px);
+      color:#fff;
+      opacity: .8;
+      margin: {
+        top: 0;
+        // bottom: 5px;
+      }
+    }
+    p {
+      color:#fff;
+      opacity: .6;
+      font-size: em(17px);
+      margin-top: 0;
+      padding: 10px 0;
+    }
+  }
+}
+form {
+  overflow: hidden;
+  label {
+    margin-bottom: 15px;
+    display: block;
+    span {
+      font-size: em(14px);
+      color: $white;
+      opacity: .8;
+      display: block;
+      margin-bottom: 3px;
+    }
+    input, select {
+      background-color: rgba(255, 255, 255, .6);
+      border-radius: 2px;
+      border: none;
+      padding: 9px 15px 7px;
+      display: block;
+      width: 100%;
+      font-size: em(15px);
+      border-bottom: transparent 3px solid;
+      transition: all .5s ease;
+      &:focus {
+        border-bottom: $accent 3px solid;
+        background-color: $white;
+      }
+    }
+  }
+  .mfp-close {
+    color: $black;
+    transition: all .5s ease;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+.success {
+  color: $white;
+  background-color: lighten($darkgrey, 20%);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  top: -100%;
+  opacity: 0;
+  transition: all .5s ease;
+  p {
+    margin: auto;
+  }
+  &.active {
+    top: 0;
+    opacity: 1;
+  }
+}
+/*
+INPUT FORM
+end */

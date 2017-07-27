@@ -1,0 +1,87 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+
+@import "media";
+
+
+//Custom styles here
+
+// top
+.hscroll {
+  overflow-x: auto !important;
+  color: #333;
+}
+h1 {
+  color: $red;
+  font-size: em(37px);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+h2 {
+  font-weight: normal;
+  font-size: em(20px);
+  margin-bottom: 3%;
+}
+
+.section {
+  a {
+    font-size: em(15px);
+    border-bottom: 1px dashed $black;
+  }
+}
+table {
+  border: 0px solid #413f3f;
+  border-collapse: collapse;
+  font-size: em(15px);
+}
+th, td {
+  border: 1px solid #413f3f;
+}
+th {
+  text-transform: uppercase;
+  border-bottom: 2px solid #413f3f;
+  // background-color: #119087;
+  background-color: $medgrey;
+  color: white;
+  padding: 10px;
+}
+td {
+  // padding: 10px 20px 10px 20px;
+  padding: 5px;
+}
+th, thead tr {
+  text-align: center;
+}
+td li {
+  padding: 0px;
+}
+td ul {
+  padding-left: 0px;
+  margin: 0;
+}
+
+tr:nth-child(2n+1){
+  background-color: $white;
+}
+
+/* четная строка таблицы класса stripy */
+tr:nth-child(2n){
+  background-color: $whitegrey;
+}
+
+.section--price {
+  padding-bottom: 60px;
+}
+
+.section--onlineprice {
+  // color: $black;
+  margin-top: -55px;
+  padding-top: 55px;
+}
+
+@import "button";
+@import "footer";
+@import "form";
+@import "top";

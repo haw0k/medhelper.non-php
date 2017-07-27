@@ -1,0 +1,110 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+
+@import "media";
+
+//Custom styles here
+
+// top
+h1 {
+  color: $red;
+  font-size: em(37px);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+h2 {
+  font-weight: normal;
+  margin-top: -7px;
+  font-size: em(21px);
+  margin-bottom: 3%;
+}
+.section {
+  h2 {
+    text-align: inherit;
+  }
+}
+h3 {
+  text-transform: uppercase;
+  font-size: em(27px);
+  font-weight: normal;
+  margin-bottom: 3%;
+}
+.section--top {
+  padding: 1% 0 2% 0;
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    color: $red;
+    font-size: em(22px);
+  }
+}
+
+.methods-img__pic {
+  width: 100%;
+  display: block;
+  &:hover {
+    // border: 3px solid $accent;
+    // box-shadow: $accent 0 0 0 5px inset;
+  }
+}
+
+.description {
+  font-size: em(15px);
+}
+
+.section--whitegrey {
+  .methods-txt__link {
+    h2 {
+      color: $white;
+    }
+    :hover {
+      color: $accent;
+    }
+  }
+}
+
+
+.section--warning {
+  li {
+    list-style: decimal  !important;
+    margin-left: 20px;
+    font-size: em(16px);
+    .warning-item__link {
+      text-transform: none;
+      color: $white;
+      border-bottom: 1px dashed $white;
+      // font-size: em(16px);
+    }
+  }
+}
+
+.warning-icon {
+  width: 100%;
+  // text-align: center;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $accent;
+  .fa {
+    font-size: 120px;
+    text-align: center;
+  }
+}
+
+@import "footer";
+@import "top";
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    margin-top: 5%;
+  }
+  h3 {
+    text-align: center;
+  }
+  .section h2 {
+    text-align: center;
+  }
+}

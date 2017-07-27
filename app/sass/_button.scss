@@ -1,0 +1,62 @@
+@import "vars";
+
+button {
+  outline: none !important;
+}
+/* red button */
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  border: none;
+  background-color: $red;
+  color: $white;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  font-size: em(14px);
+  line-height: em(22px);
+  letter-spacing: 2px;
+  padding: 8px 35px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 4px 0 $darkred;
+  transition: all .15s ease;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: #df0505;
+    color: $white;
+  }
+  &:active {
+    background-color: $darkred;
+    transform: translateY(2px);
+  }
+}
+
+/* yellow button */
+.button--yellow {
+  .button {
+    color: $darkgrey;
+    background-color: $accent;
+    box-shadow: 0 4px 0 $darkaccent;
+    font-size: em(14px);
+    &:hover {
+      background-color: $lightaccent;
+      color: $black;
+    }
+    &:active {
+      background-color: $darkaccent;
+    }
+  }
+}
+
+
+.section--button {
+  text-align: center;
+  position: relative;
+  top: -28px;
+  a {
+    color: $white;
+    font-size: em(14px);
+  }
+}

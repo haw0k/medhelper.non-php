@@ -1,0 +1,135 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+@import "media";
+
+h1 {
+  color: $red;
+  font-size: em(37px);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding-bottom: 3%;
+}
+h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  // font-weight: normal;
+}
+
+.section--top {
+  padding-bottom: 0px;
+}
+.message {
+  width: 90%;
+  margin-bottom: 34px;
+  border: 1px solid transparent;
+  padding: 15px 10px 15px 35px;
+  // float: left;
+  h3 {
+    line-height: em(49px);
+    // margin-left: 15px;
+    float: left;
+    // clear: both;
+  }
+  i {
+    font-size: em(58px);
+    color: $white;
+  }
+  .text {
+    font-size: em(17px);
+    line-height: em(20px);
+    clear: both;
+  }
+}
+.message__date {
+  margin-left: 20px;
+}
+.message__text {
+  display: inline-block;
+  width: 100%;
+}
+
+.message--light {
+  background-color: #ccc;
+  color: $darkgrey;
+  border-radius: 0 25px 25px 25px;
+  i {
+    color: $medgrey
+  }
+  .rounded-img-wrap {
+    border: 4px solid $medgrey;
+  }
+}
+
+.message--dark {
+  background-color: $medgrey;
+  color: $whitegrey;
+  border-radius: 25px 25px 25px 0;
+  border: 1px solid transparent;
+  float: right;
+  .text {
+    color: $white;
+  }
+  i {
+    color: $whitegrey;
+  }
+  .rounded-img-wrap {
+    border: 4px solid $whitegrey;
+  }
+}
+.rounded-img-wrap {
+  border-radius: 10em;
+  border: 4px solid $white;
+  overflow: hidden;
+  width: em(65px);
+  height: em(65px);
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+}
+.rounded-img-wrap, .message i {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.links__link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.links__link--doc {
+  width: 158px;
+  display: block;
+  margin: 0 auto;
+}
+.links__link--doctora {
+  width: 271px;
+  display: block;
+  margin: 0 auto;
+}
+.links__link--likarni {
+  width: 148px;
+  display: block;
+  margin: 0 auto;
+}
+
+.links__wrapper {
+  margin: 20px 0 20px 0;
+}
+
+@import "button";
+
+.section--button {
+  top: 27px;
+  padding: 0;
+  a:hover {
+    color: $white;
+  }
+}
+
+@import "footer";
+@import "form";
+@import "top";

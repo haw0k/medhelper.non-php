@@ -1,0 +1,99 @@
+@import "bourbon";
+@import "vars";
+
+/*==========  Desktop First  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1920px) {
+  .submenu--methods {
+    margin-left: 6px;
+  }
+  /* */
+}
+@media only screen and (max-width: 1200px) {
+  /* */
+  .submenu--methods {
+    margin-left: 23px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .submenu--methods {
+    margin-left: 23px;
+  }
+  /* */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .header .menu__line {
+    text-align: center;
+    .phone {
+      text-align: left;
+      padding-top: 12px;
+      padding-bottom: 5px;
+    }
+    .menu-toggle {
+      top: -4px;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .vcard {
+    display: none;
+  }
+  .header .menu__line {
+   .phone {
+     text-align: left;
+   }
+  }
+  .header .menu-toggle {
+    top: -2px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 390px) {
+  .footer {
+    .menu-main--hidden {
+      margin-top: 17px !important;
+    }
+    .logo__text {
+      display: none;
+    }
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+/* */
+}
+/*==========  Mobile First  ========== */
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /* */
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* */
+}
